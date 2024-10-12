@@ -1,0 +1,23 @@
+<div class="registration-container">
+  <img src="path-to-image.jpg" alt="E-Learning System" />
+  <h2>E-Learning Platform</h2>
+  <p>Welcome to our platform. Please register to continue.</p>
+  
+  <!-- Four boxes for E-Learning, Gallery, Suppliers Directory, Get in Touch -->
+  <div class="boxes">
+    <div class="box">E-Learning</div>
+    <div class="box">Gallery</div>
+    <div class="box">Suppliers Directory</div>
+    <div class="box">Get in Touch</div>
+  </div>
+  
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" type="email" required />
+    
+    <label for="password">Password:</label>
+    <input id="password" formControlName="password" type="password" required />
+    
+    <button type="submit">Register</button>
+  </form>
+</div>
